@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden
+{
+	display: none;
+}
+
+.clearfix:after
+{
+	content: " ";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+#container
+{
+	margin: 0 auto;
+}
+
+.blackBox
+{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	float: left;
+	margin: 25px;
+}
+
+#box1:hover
+{
+	background-color: red;
+}
+
+#box2:hover
+{
+	background-color: blue;
+}
+
+#box3:hover
+{
+	background-color: green;
+}
+
+#box4:hover
+{
+	background-color: orange;
+}
+
+#box5:hover
+{
+	background-color: purple;
+}
+
+#box6:hover
+{
+	background-color: pink;
+}
+
+#box7:hover
+{
+	background-color: yellow;
+}
+
+#box8:hover
+{
+	background-color: brown;
+}
+
+#box9:hover
+{
+	background-color: turquoise;
+}
+
+#box10:hover
+{
+	background-color: cyan;
+}
+
+#box11:hover
+{
+	background-color: red;
+}
+
+#box12:hover
+{
+	background-color: blue;
+}
+
+#box13:hover
+{
+	background-color: green;
+}
+
+#box14:hover
+{
+	background-color: orange;
+}
+
+#box15:hover
+{
+	background-color: purple;
+}
+
+#box16:hover
+{
+	background-color: pink;
+}
+
+#box17:hover
+{
+	background-color: yellow;
+}
+
+#box18:hover
+{
+	background-color: brown;
+}
+
+#box19:hover
+{
+	background-color: turquoise;
+}
+
+#box20:hover
+{
+	background-color: cyan;
+}
