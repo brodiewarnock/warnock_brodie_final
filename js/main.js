@@ -16,8 +16,66 @@ console.log("Linked Up");
 // The number of attempts will be recorded and displayed as a highscore.
 // Players can continuously retry the game to beat their previous highscore.
 
-// var assignColour = Math.floor(math.random() * 21);
 
-function assignColour(0, 19) {
-  return Math.random() * (19 - 0) + 19;
+// an array to hold all of the cards
+let card = document.getElementsByClassName("card");
+let cards = [...card]
+console.log(cards);
+
+// a deck containing all the cards featured in the game
+const deck = document.getElementById("card-deck");
+
+ // an array for all opened cards
+var openedCards = [];
+
+
+// a function to shuffle all of the cards
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+};
+
+
+// shuffles cards when page is refreshed / loads
+document.body.onload = startGame();
+
+
+//  function to start a new play 
+function startGame(){
+    // shuffle deck
+    cards = shuffle(cards);
+    // remove all exisiting classes from each card
+    for (var i = 0; i < cards.length; i++){
+        deck.innerHTML = "";
+        [].forEach.call(cards, function(item) {
+            deck.appendChild(item);
+        });
+        cards[i].classList.remove("show", "open",);
+    }
 }
+
+
+// toggles open and show class to display cards
+var displayCard = function (){
+    this.classList.toggle("open");
+    this.classList.toggle("show");
+};
+
+
+
+
+
+
+
+
+
+

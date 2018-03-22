@@ -18,113 +18,34 @@
 #container
 {
 	margin: 0 auto;
+	width: 960px;
+	height: 778px;
+	background-image: url(../images/background.jpg)
 }
 
-.blackBox
+.deck
 {
-	width: 300px;
-	height: 300px;
-	background-color: black;
-	float: left;
-	margin: 25px;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
 }
 
-#box1:hover
+.card
 {
-	background-color: red;
+	margin: 5px;
+	width: 170px;
+	height: 170px;
+	background-image: url(../images/starship_troopers_logo.jpg)
 }
 
-#box2:hover
+.open 
 {
-	background-color: blue;
+	cursor: default;
 }
 
-#box3:hover
+.show
 {
-	background-color: green;
-}
-
-#box4:hover
-{
-	background-color: orange;
-}
-
-#box5:hover
-{
-	background-color: purple;
-}
-
-#box6:hover
-{
-	background-color: pink;
-}
-
-#box7:hover
-{
-	background-color: yellow;
-}
-
-#box8:hover
-{
-	background-color: brown;
-}
-
-#box9:hover
-{
-	background-color: turquoise;
-}
-
-#box10:hover
-{
-	background-color: cyan;
-}
-
-#box11:hover
-{
-	background-color: red;
-}
-
-#box12:hover
-{
-	background-color: blue;
-}
-
-#box13:hover
-{
-	background-color: green;
-}
-
-#box14:hover
-{
-	background-color: orange;
-}
-
-#box15:hover
-{
-	background-color: purple;
-}
-
-#box16:hover
-{
-	background-color: pink;
-}
-
-#box17:hover
-{
-	background-color: yellow;
-}
-
-#box18:hover
-{
-	background-color: brown;
-}
-
-#box19:hover
-{
-	background-color: turquoise;
-}
-
-#box20:hover
-{
-	background-color: cyan;
+	opacity: 0;
 }
